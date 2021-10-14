@@ -58,7 +58,7 @@
         <activity
             android:name=".DozeSettingsActivity"
             android:label="@string/ambient_display_title"
-            android:theme="@style/MotoActions"
+            android:theme="@style/Theme.SubSettingsBase"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.moto.actions.DOZE_SETTINGS" />
@@ -70,7 +70,7 @@
             android:name=".ActionsPreferenceActivity"
             android:label="@string/moto_actions_title"
             android:summary="@string/device_gestures_summary"
-            android:theme="@style/MotoActions"
+            android:theme="@style/Theme.SubSettingsBase"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -89,14 +89,14 @@
         <activity
             android:name=".GestureSettingsActivity"
             android:label="@string/device_gestures_title"
-            android:theme="@style/MotoActions"
+            android:theme="@style/Theme.SubSettingsBase"
             android:exported="false">
         </activity>
 
         <activity
             android:name=".FPGestureSettingsActivity"
             android:label="@string/fingerprint_gestures_title"
-            android:theme="@style/MotoActions"
+            android:theme="@style/Theme.SubSettingsBase"
             android:exported="false">
         </activity>
     </application>

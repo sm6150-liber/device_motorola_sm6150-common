@@ -16,7 +16,6 @@
 
 package com.moto.actions;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.content.Context;
 import android.content.SharedPreferences.Editor;
@@ -48,9 +47,6 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        ActionBar actionbar = getActivity().getActionBar();
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        actionbar.setTitle(R.string.fingerprint_gestures_title);
     }
 
     @Override

@@ -198,8 +198,8 @@ PRODUCT_PACKAGES += \
     init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
     init.qcom.rc \
-    init.qcom.power.rc \
     init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
@@ -408,7 +408,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.sm6150-libperfmgr
+    android.hardware.power-service-qti
 
 # QCOM
 PRODUCT_COPY_FILES += \
@@ -474,9 +474,7 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-	$(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel
+	$(LOCAL_PATH)
 
 # Telephony
 PRODUCT_PACKAGES += \

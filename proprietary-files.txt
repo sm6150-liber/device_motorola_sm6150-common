@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from Hanoip RRI31.Q1-31
+# All unpinned blobs below are extracted from Hanoip S2RI32.32-20-7
 
 # ADSP
 vendor/bin/adsprpcd
@@ -293,7 +293,7 @@ vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# GPS
+# GPS - from HANOIP RRIS31.Q1-42-51-12-4
 vendor/bin/garden_app
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
@@ -517,7 +517,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 # Moto Permissions
 product/etc/permissions/com.motorola.moto-uirefresh.xml
 product/etc/permissions/com.motorola.motodisplay.xml
-product/etc/permissions/com.motorola.androidx.camera.extensions.xml:vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml
+system_ext/etc/permissions/com.motorola.androidx.camera.extensions.xml:vendor/etc/permissions/com.motorola.androidx.camera.extensions.xml
 
 # Neural-networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
@@ -607,10 +607,11 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 etc/permissions/privapp-permissions-qti.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/embms.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/permissions/telephonyservice.xml
+system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/framework/embmslibrary.jar
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -914,14 +915,6 @@ vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # Snapdragon Computer Vision Engine
-system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-system_ext/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-system_ext/lib/vendor.qti.hardware.scve.panorama@1.0.so
-system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
-system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so
-system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 vendor/lib/libfastcvdsp_stub.so
 -vendor/lib/libfastcvopt.so
 vendor/lib/libscveCommon.so
